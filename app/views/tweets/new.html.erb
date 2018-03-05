@@ -1,0 +1,14 @@
+<div class="contents row">
+   <div class="container">
+  <%= form_tag('/tweets', method: :post) do %>
+<!-- form_tagに２つの引数をもたせている  どちらもリクエストについて表していて第一引数はリクエストを送信した時のパスを、第二引数はどのhttpメソッドを使うかを表している -->
+
+    <h3>
+      投稿する
+    </h3>
+    <input placeholder="Image URL" type="text" name="image" autofocus="true">
+    <textarea placeholder="text" name="text" cols="30" rows="10"></textarea>
+    <input type="submit" value="SENT">
+  <% end %>
+</div>
+</div>

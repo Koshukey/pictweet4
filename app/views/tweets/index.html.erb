@@ -1,0 +1,15 @@
+  <div class="contents row" >
+    <% @tweets.each do |tweet| %>
+ <%= render partial: "tweet", locals: { tweet: tweet } %>
+<!-- renderメソッドのpartialで_tweet.html.erbを呼び出し、localsで部分テンプレート内でtweetという変数を使えるようにする
+ここでいうtweetという変数とは？index.html.erbつまりこのファイル内の2行目で定義されているeachメソッドの変数のこと
+locals: { tweet:tweet}について
+右のtweetはeachメソッド内の変数としてのtweet 左側は部分テンプレート内での変数の名前 今回はたまたまindex.html.erbでも_tweet.html.erbでも変数名が一緒だった
+ -->
+
+    <% end %>
+    <%= paginate(@tweets) %>
+  <!--  kaminari:paginateメソッドを使用
+  @tweetsはtweets controllerで定義したもの ※データベースのtweetsテーブルにレコードが６個以上ないとページネーションが表示されません。だって5個までは１ページで表示できるから -->
+  </div>
+

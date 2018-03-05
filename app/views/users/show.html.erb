@@ -1,0 +1,9 @@
+  <div class="contents row" >
+    <p><%= @nickname %>さんの投稿一覧</p>
+    <% @tweets.each do |tweet| %>
+<%= render partial: "tweets/tweet", locals: { tweet: tweet } %>
+<!-- 違うフォルダ内の部分テンプレートを呼び出すときは tweets/tweetのようにどのフォルダの部分テンプレートを使用しているかを明示的に記載する。 -->
+
+    <% end %>
+    <%= paginate(@tweets) %>
+  </div>
