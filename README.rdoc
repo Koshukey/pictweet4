@@ -5,4 +5,4 @@
 ログイン機能、コメント機能を持っている写真共有webアプリ
 
 
-<img width="1138" alt="2018-03-15 10 30 32" src="https://user-images.githubusercontent.com/31874274/37439682-81c74b68-283c-11e8-923d-c45146f5112b.png">
+https://user-images.githubusercontent.com/31874274/37439682-81c74b68-283c-11e8-923d-c45146f5112b.png
